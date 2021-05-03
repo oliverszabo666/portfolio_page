@@ -286,11 +286,9 @@ section {
 #work .content .codecool .api-wars,
 #work .content .codecool .weather-app {
   margin: 20px 0;
-  background-color: #141313;
-  color: white;
+  border: #869ee9 solid 2px;
+  color: black;
   padding: 30px;
-  -webkit-box-shadow: 0 10px 10px gray;
-          box-shadow: 0 10px 10px gray;
   text-align: center;
 }
 
