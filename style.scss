@@ -1,0 +1,299 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300;400;500;600;700;800;900&display=swap");
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+ul {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  li {
+    list-style-type: none;
+  }
+}
+
+/* width */
+::-webkit-scrollbar {
+  width: 0;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: none;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: none;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: none;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+  scroll-behavior: smooth;
+}
+a {
+  cursor: pointer;
+  text-decoration: none;
+  color: inherit;
+}
+svg {
+  position: fixed;
+  top: 0;
+  right: 0;
+  cursor: pointer;
+  z-index: 999;
+}
+
+#nav-open {
+  position: fixed;
+  right: 0;
+  background-color: black;
+  z-index: 998;
+  width: 60vw;
+  min-height: 100vh;
+
+  animation: slide 1s ease-in-out;
+
+  @keyframes slide {
+    from {
+      width: 0vw;
+    }
+    to {
+      width: 60vw;
+    }
+  }
+
+  @media (min-width: 1000px) {
+    width: 30vw;
+    @keyframes slide {
+      from {
+        width: 0vw;
+      }
+      to {
+        width: 30vw;
+      }
+    }
+  }
+
+  ul {
+    color: whitesmoke;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    height: 50vh;
+    margin-top: 100px;
+    padding: 10px 20px;
+
+    li {
+      list-style-type: none;
+      font-size: 50px;
+      font-weight: 100;
+    }
+  }
+}
+.display {
+  display: none;
+}
+.CTA {
+  padding: 15px 30px;
+  font-size: 18px;
+  font-weight: 500;
+  background-color: rgb(52, 81, 169);
+  cursor: pointer;
+  color: white;
+  border: 0;
+  margin-top: 20px;
+  transition: 300ms;
+
+  &:hover {
+    background: white;
+    color: rgb(52, 81, 169);
+  }
+}
+section {
+  width: 100%;
+  min-height: 100vh;
+}
+#about {
+  background-color: black;
+  color: white;
+
+  .title {
+    max-width: max-content;
+    padding: 10px;
+    width: 90vw;
+    margin: 0 auto;
+    text-align: center;
+    img {
+      width: 200px;
+      margin-top: 50px;
+    }
+
+    h1 {
+      font-weight: 900;
+      font-size: 45px;
+      margin-top: 50px;
+      margin-bottom: 20px;
+    }
+    h2 {
+      font-weight: 100;
+      font-size: 30px;
+      margin-top: 10px;
+    }
+  }
+}
+#work {
+  background-color: white;
+  min-height: 100vh;
+  width: 90vw;
+  margin: 10px auto;
+  .work-title {
+    padding: 10px 0;
+    h2 {
+      font-weight: 900;
+      font-size: 60px;
+      margin-top: 10px;
+
+      @media (max-width: 500px) {
+        font-size: 40px;
+      }
+    }
+  }
+
+  .content {
+    text-align: left;
+    margin: 0 auto;
+    img {
+      width: 330px;
+      margin: 10px 0;
+    }
+    h3 {
+      font-size: 20px;
+      font-weight: 300;
+      margin: 20px 0;
+    }
+
+    .wondershare {
+      margin: 50px 0px 100px;
+    }
+    .wondershare {
+      .drawit,
+      .homa {
+        margin: 10px 0;
+        display: flex;
+        flex-direction: column;
+
+        .info {
+          text-align: left;
+          margin: 30px 0;
+
+          p {
+            line-height: 1.5;
+            margin: 10px 0;
+          }
+        }
+      }
+    }
+    .codecool {
+      margin: 50px 0;
+      text-align: left;
+
+      p {
+        font-size: 16px;
+        font-weight: 300;
+        opacity: 0.9;
+      }
+      .tech-mag,
+      .api-wars,
+      .weather-app {
+        margin: 20px 0;
+        background-color: rgb(20, 19, 19);
+        color: white;
+        padding: 30px;
+        box-shadow: 0 10px 10px gray;
+        text-align: center;
+
+        h4 {
+          font-size: 40px;
+          font-weight: 900;
+          margin: 20px 0;
+
+          @media (max-width: 500px) {
+            font-size: 30px;
+          }
+        }
+        a {
+          transition: 500ms;
+          &:hover {
+            color: rgb(134, 158, 233);
+          }
+        }
+      }
+    }
+  }
+}
+#art {
+  background-color: rgb(255, 255, 255);
+  width: 90vw;
+  margin: 10px auto;
+
+  h3 {
+    font-weight: 900;
+    font-size: 60px;
+    margin-top: 10px;
+    margin-bottom: 100px;
+
+    @media (max-width: 500px) {
+      font-size: 40px;
+    }
+  }
+
+  .kripto {
+    display: flex;
+    img {
+      margin: 5px;
+      padding: 5px;
+    }
+  }
+
+  div {
+    overflow: scroll;
+    border: none;
+
+    img {
+      width: 100%;
+    }
+  }
+}
+#contact {
+  background-color: black;
+  color: white;
+
+  min-height: 25vh;
+  padding-top: 20px;
+
+  .ty {
+    display: block;
+    width: max-content;
+    margin: 30px auto;
+    font-size: 30px;
+    font-weight: 100;
+  }
+  .mail {
+    display: block;
+    width: max-content;
+    margin: 10px auto;
+    font-size: 20px;
+    font-weight: 300;
+  }
+}

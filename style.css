@@ -1,0 +1,385 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300;400;500;600;700;800;900&display=swap");
+*,
+*::before,
+*::after {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+
+ul li {
+  list-style-type: none;
+}
+
+/* width */
+::-webkit-scrollbar {
+  width: 0;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: none;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: none;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: none;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+  scroll-behavior: smooth;
+}
+
+a {
+  cursor: pointer;
+  text-decoration: none;
+  color: inherit;
+}
+
+svg {
+  position: fixed;
+  top: 0;
+  right: 0;
+  cursor: pointer;
+  z-index: 999;
+}
+
+#nav-open {
+  position: fixed;
+  right: 0;
+  background-color: black;
+  z-index: 998;
+  width: 60vw;
+  min-height: 100vh;
+  -webkit-animation: slide 1s ease-in-out;
+          animation: slide 1s ease-in-out;
+}
+
+@-webkit-keyframes slide {
+  from {
+    width: 0vw;
+  }
+  to {
+    width: 60vw;
+  }
+}
+
+@keyframes slide {
+  from {
+    width: 0vw;
+  }
+  to {
+    width: 60vw;
+  }
+}
+
+@media (min-width: 1000px) {
+  #nav-open {
+    width: 30vw;
+  }
+  @-webkit-keyframes slide {
+    from {
+      width: 0vw;
+    }
+    to {
+      width: 30vw;
+    }
+  }
+  @keyframes slide {
+    from {
+      width: 0vw;
+    }
+    to {
+      width: 30vw;
+    }
+  }
+}
+
+#nav-open ul {
+  color: whitesmoke;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  height: 50vh;
+  margin-top: 100px;
+  padding: 10px 20px;
+}
+
+#nav-open ul li {
+  list-style-type: none;
+  font-size: 50px;
+  font-weight: 100;
+}
+
+.display {
+  display: none;
+}
+
+.CTA {
+  padding: 15px 30px;
+  font-size: 18px;
+  font-weight: 500;
+  background-color: #3451a9;
+  cursor: pointer;
+  color: white;
+  border: 0;
+  margin-top: 20px;
+  -webkit-transition: 300ms;
+  transition: 300ms;
+}
+
+.CTA:hover {
+  background: white;
+  color: #3451a9;
+}
+
+section {
+  width: 100%;
+  min-height: 100vh;
+}
+
+#about {
+  background-color: black;
+  color: white;
+}
+
+#about .title {
+  max-width: -webkit-max-content;
+  max-width: -moz-max-content;
+  max-width: max-content;
+  padding: 10px;
+  width: 90vw;
+  margin: 0 auto;
+  text-align: center;
+}
+
+#about .title img {
+  width: 200px;
+  margin-top: 50px;
+}
+
+#about .title h1 {
+  font-weight: 900;
+  font-size: 45px;
+  margin-top: 50px;
+  margin-bottom: 20px;
+}
+
+#about .title h2 {
+  font-weight: 100;
+  font-size: 30px;
+  margin-top: 10px;
+}
+
+#work {
+  background-color: white;
+  min-height: 100vh;
+  width: 90vw;
+  margin: 10px auto;
+}
+
+#work .work-title {
+  padding: 10px 0;
+}
+
+#work .work-title h2 {
+  font-weight: 900;
+  font-size: 60px;
+  margin-top: 10px;
+}
+
+@media (max-width: 500px) {
+  #work .work-title h2 {
+    font-size: 40px;
+  }
+}
+
+#work .content {
+  text-align: left;
+  margin: 0 auto;
+}
+
+#work .content img {
+  width: 330px;
+  margin: 10px 0;
+}
+
+#work .content h3 {
+  font-size: 20px;
+  font-weight: 300;
+  margin: 20px 0;
+}
+
+#work .content .wondershare {
+  margin: 50px 0px 100px;
+}
+
+#work .content .wondershare .drawit,
+#work .content .wondershare .homa {
+  margin: 10px 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+#work .content .wondershare .drawit .info,
+#work .content .wondershare .homa .info {
+  text-align: left;
+  margin: 30px 0;
+}
+
+#work .content .wondershare .drawit .info p,
+#work .content .wondershare .homa .info p {
+  line-height: 1.5;
+  margin: 10px 0;
+}
+
+#work .content .codecool {
+  margin: 50px 0;
+  text-align: left;
+}
+
+#work .content .codecool p {
+  font-size: 16px;
+  font-weight: 300;
+  opacity: 0.9;
+}
+
+#work .content .codecool .tech-mag,
+#work .content .codecool .api-wars,
+#work .content .codecool .weather-app {
+  margin: 20px 0;
+  background-color: #141313;
+  color: white;
+  padding: 30px;
+  -webkit-box-shadow: 0 10px 10px gray;
+          box-shadow: 0 10px 10px gray;
+  text-align: center;
+}
+
+#work .content .codecool .tech-mag h4,
+#work .content .codecool .api-wars h4,
+#work .content .codecool .weather-app h4 {
+  font-size: 40px;
+  font-weight: 900;
+  margin: 20px 0;
+}
+
+@media (max-width: 500px) {
+  #work .content .codecool .tech-mag h4,
+  #work .content .codecool .api-wars h4,
+  #work .content .codecool .weather-app h4 {
+    font-size: 30px;
+  }
+}
+
+#work .content .codecool .tech-mag a,
+#work .content .codecool .api-wars a,
+#work .content .codecool .weather-app a {
+  -webkit-transition: 500ms;
+  transition: 500ms;
+}
+
+#work .content .codecool .tech-mag a:hover,
+#work .content .codecool .api-wars a:hover,
+#work .content .codecool .weather-app a:hover {
+  color: #869ee9;
+}
+
+#art {
+  background-color: white;
+  width: 90vw;
+  margin: 10px auto;
+}
+
+#art h3 {
+  font-weight: 900;
+  font-size: 60px;
+  margin-top: 10px;
+  margin-bottom: 100px;
+}
+
+@media (max-width: 500px) {
+  #art h3 {
+    font-size: 40px;
+  }
+}
+
+#art .kripto {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+#art .kripto img {
+  margin: 5px;
+  padding: 5px;
+}
+
+#art div {
+  overflow: scroll;
+  border: none;
+}
+
+#art div img {
+  width: 100%;
+}
+
+#contact {
+  background-color: black;
+  color: white;
+  min-height: 25vh;
+  padding-top: 20px;
+}
+
+#contact .ty {
+  display: block;
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+  margin: 30px auto;
+  font-size: 30px;
+  font-weight: 100;
+}
+
+#contact .mail {
+  display: block;
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+  margin: 10px auto;
+  font-size: 20px;
+  font-weight: 300;
+}
+/*# sourceMappingURL=style.css.map */
