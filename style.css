@@ -192,6 +192,12 @@ section {
   margin-bottom: 20px;
 }
 
+@media (max-width: 320px) {
+  #about .title h1 {
+    font-size: 40px;
+  }
+}
+
 #about .title h2 {
   font-weight: 100;
   font-size: 30px;

@@ -144,6 +144,10 @@ section {
       font-size: 45px;
       margin-top: 50px;
       margin-bottom: 20px;
+
+      @media (max-width: 320px) {
+        font-size: 40px;
+      }
     }
     h2 {
       font-weight: 100;
