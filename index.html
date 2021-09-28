@@ -20,102 +20,131 @@
 
     <div id="nav-open" class="display">
        <ul>
-           <a href="#about"><li>about</li></a>
-           <a href="#work"><li>development</li></a>
-           <a href="#art"><li>design</li></a>
-           <a href="#contact"><li>contact</li></a>
+        <a href="#home"><li>HOME</li></a>
+           <a href="#frontend"><li>FRONTEND</li></a>
+           <a href="#ui-ux"><li>UI/UX DESIGN</li></a>
+           <a href="#about"><li>ABOUT</li></a>
        </ul>
     </div>
 
   
+    <section id="hero">
+        <div class="container">
+            <div class="front-box">
+             <div class="top">
+                <h1>.szabó/olivér</h1>
+                <h2>UI/UX Designer</h2>
+                <h2>Frontend Developer</h2></div>
+             <div class="bottom">
+                 <a href="#about">
+                     About
+                 </a>
+             </div>
+            </div>
+            <div class="back-box"></div>
 
-    <section id="about">
-        
-        <div class="title">
-            <img src="./img/oli.gif" alt="mug" />
-            <h1>.szabó/olivér</h1>
-            <h2>UI/UX Designer</h2>
-            <h2>Front-end developer</h2>
-            <a href="#work">
-                <button class="CTA">Learn More</button>
-            </a>
+            <div class="arrow">
+                <a href="#frontend">
+                    <img id="arrow-dwn" src="./img/right.png"/>
+                </a>
+            </d>
         </div>
-      
-
     </section>
-    <section id="work">
-      
-        <div class="work-title">
-            <h2>Development</h2>
-        </div>
-        <div class="content">
-            <div class="codecool">
-                <p>All of these projects were done in a group of 2 to 4.</p>
+    <section id="frontend">
+        <div class="container">
+            <div class="title">
+                <h2>Front-End Development</h2>
+                <h3>At the bootcamp of Codecool</h3>
+            </div>
 
-                <div class="tech-mag">
-                  <a href="https://github.com/onkelolesz/tech_news" target="_blank">  <h4>Tech Magazine</h4></a>
-                
-                </div>
-                
-                <div class="api-wars">
-                    <a href="https://github.com/onkelolesz/star_wars_api" target="_blank">
+            <div class="table">
+                <h3>Projects from Codecool</h3>
+                <div class="projects">
+                    <div class="card">
+                        <h4>Tech Magazine</h4>
+                        <p>Online Tech Magazine app that uses API key from environmental variables, using it to fetch news. The NewsAPI is not fetched for every request, but still, fresh news are served. The client never receives an article, that it has already received.</p>
+                    </div>
+                    <div class="card">
                         <h4>Star Wars API</h4>
-                    </a>
-               
-                    
-                </div>
-                
-                <div class="weather-app">
-                    <a href="https://github.com/onkelolesz/weather_app" target="_blank"> <h4>Weather App</h4></a>
-                   
+                        <p>Express.js backend project, session handling, Passport.js for user authentication. Database-like website using Star Wars style API.
+                            Use routes with Express.js,
+                            Lowdb database for handling users, AJAX for API requests.</p>
+                    </div>
+                    <div class="card">
+                        <h4>Weather App</h4>
+                        <p>Weather application to showcase weather data like temperature, humidity, air pressure etc, providing weather data of cities and countries all over the world, using a dropdown menu you could pick any city you want to see.</p>
+                    </div>
                 </div>
             </div>
-            <div class="wondershare">
-                <h3>Wondershare.com Mockit Design Contest</h3>
+        </div>
+    </section>
+    <section id="ui-ux">
+        <div class="container">
+            <div class="title">
+                <h2>UI/UX Design</h2>
+                <h3>Freelance works</h3>
+            </div>
 
-                <div class="drawit">
-                    <div class="info">
-                        <h4>draw.it - Kids Board Game Mobile App</h4>
+            <div class="box-container">
+                <div class="left-box">
+                    <h4>HILLSIDE BEAUTY</h4>
+                    <div class="box-text">
                         <p>
-                            Fully Functional Game Design. <br/>The screens are divided in to states, you can navigate between them by clicking on the buttons, or using the navigation bar on the bottom.
+                            Complete image design and branding, including the website, business cards, signs/banners of the actual shop of a beauty saloon located in Budapest, Hungary.
                         </p>
-                        <a href="https://mockittapp.wondershare.com/square/mtknr810o7mk7nm8" target="_blank">
-                            <button class="CTA">See More</button>
+                        <p>
+                            Went through a process of client-oriented development, with revisional sessions and also helped with social media marketing.
+                        </p>
+                    </div>
+                    <div class="link">
+                        <a href="#">Go to website</a>
+                        <a href="#">See Designs in PDF</a>
+                    </div>
+                </div>
+
+                <div class="right-box">
+                    <h4>KRIPTOHÁLÓZAT</h4>
+                    <div class="box-text">
+                        <p>Mockup design of a cryptocurrency wallet, social application and news feed. Only design mockup as no project actually happened, just an idea of mine.</p>
+                        <p>You can see the designs in PDF.</p>
+                    </div>
+                    <a href="#">See more</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="about">
+        <div class="container">
+            <div class="box-container">
+                <div class="left-box">
+                    <h3>About</h3>
+                    <div class="text">
+                        <p class="thin">
+                            Junior Front-end developer/UI-UX Designer.
+Illustrator, artist.
+                        </p>
+                        <p>
+                            Solution-driven, creative individual with
+the ability to help you create a visually
+pleasing experience for your customers,
+while making you, my client just as
+satisfied with the final product.
+                        </p>
+                    </div>
+                    <div class="links">
+                        <a class="cv" href="#">
+                            Download My CV
                         </a>
                     </div>
                 </div>
-            
-                <div class="homa">
-                    <div class="info">
-                        <h4>homa - Help A Mom Out</h4>
-                        <p>The app that helps mothers dealing with daily tasks, while letting people earn some extra cash for helping out.
+                <div class="right-box">
+                    <div class="img-cont">
+                        <img src="./img/20210928_161807.jpg"/>
 
-                            <br />You can either register as a Mom, which enables you to create jobs, or as an Employee, where you can browse the jobs shared by mothers in your area.</p>
-                        <a href="https://mockittapp.wondershare.com/square/mtknoqsjgwnex92k" target="_blank">
-                            <button class="CTA">See More</button>
-                        </a>
                     </div>
                 </div>
             </div>
-     
         </div>
-    </section>
-    <section id="art">
-        <h3>Design</h3>
-        
-        <div class="infraslimx">
-            <img src="./img/landing.png"/>
-        </div>
-        <div class="kripto">
-            <img src="./img/NyitóKépernyő.png" />
-            <img src="./img/Regisztráció.png" />
-            <img src="./img/Bejelentkezés.png" />
-            <img src="./img/Hírek.png" />
-        </div>
-    </section>
-    <section id="contact">
-        <p class="ty">Thank you for visiting.</p>
-        <p class="mail">szo.design@tutanota.com</p>
     </section>
 </body>
 </html>
