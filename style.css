@@ -223,15 +223,22 @@ section .container .title h3 {
   font-weight: 900;
 }
 
-@media (max-width: 900px) {
+@media (max-width: 700px) {
   #hero .container .front-box h1 {
-    font-size: 25px;
+    font-size: 35px;
   }
 }
 
 #hero .container .front-box h2 {
   text-align: right;
   width: 92%;
+}
+
+@media (max-width: 700px) {
+  #hero .container .front-box h2 {
+    font-size: 15px;
+    width: 95%;
+  }
 }
 
 #hero .container .front-box a {
@@ -276,6 +283,12 @@ section .container .title h3 {
           justify-content: space-between;
 }
 
+@media (max-width: 400px) {
+  #frontend .table {
+    padding: 15px;
+  }
+}
+
 #frontend .table h3 {
   text-align: center;
   margin: 0 0 50px 0;
@@ -317,9 +330,22 @@ section .container .title h3 {
       -ms-flex-pack: justify;
           justify-content: space-between;
   width: 100%;
-  margin: 5px;
+  margin: 0 5px;
   border: solid 2.5px black;
   padding: 20px 10px;
+  -webkit-transition: 200ms;
+  transition: 200ms;
+}
+
+@media (max-width: 900px) {
+  #frontend .table .projects .card {
+    margin: 5px 0;
+  }
+}
+
+#frontend .table .projects .card:hover {
+  background: #000000;
+  color: #dcd16b;
 }
 
 #frontend .table .projects .card h4 {
@@ -378,13 +404,20 @@ section .container .title h3 {
       -ms-flex-pack: justify;
           justify-content: space-between;
   width: 100%;
-  margin: 10px;
+  margin: 0 10px;
   border: solid 2.5px #dcd16b;
   -webkit-box-shadow: 5px 5px 0 #dcd16b;
           box-shadow: 5px 5px 0 #dcd16b;
   padding: 50px;
   min-height: 500px;
   text-align: center;
+}
+
+@media (max-width: 900px) {
+  #ui-ux .box-container .left-box,
+  #ui-ux .box-container .right-box {
+    margin: 10px 0;
+  }
 }
 
 #ui-ux .box-container .left-box h4,
@@ -464,6 +497,13 @@ section .container .title h3 {
 #about .box-container .left-box,
 #about .box-container .right-box {
   margin: 0 10px;
+}
+
+@media (max-width: 900px) {
+  #about .box-container .left-box,
+  #about .box-container .right-box {
+    margin: 10px 0;
+  }
 }
 
 #about .box-container .left-box {
